@@ -4,7 +4,7 @@ const ChatMessage = require("../models/ChatMessage"); // Adjust the path as need
 const registerSocket = (server) => {
   const io = socketIo(server, {
     cors: {
-      origin: "http://localhost:3000",
+      origin: "https://mern-chat-app-frontend-gl1h.onrender.com",
       methods: ["GET", "POST"],
       credentials: true,
     },
